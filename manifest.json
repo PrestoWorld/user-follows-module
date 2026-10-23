@@ -1,0 +1,11 @@
+{
+    "name": "user-follows",
+    "version": "1.0.0",
+    "description": "User Follows module: quan hệ follow giữa người dùng",
+    "author": "BookOwl Team",
+    "namespace": "PrestoWorld\\Modules\\UserFollows",
+    "providers": ["PrestoWorld\\Modules\\UserFollows\\Module"],
+    "config": ["config/user-follows.php"],
+    "migrations": ["Migrations/001_user_follows_tables.php"],
+    "dependencies": {}
+}
