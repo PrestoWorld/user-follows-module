@@ -1,11 +1,30 @@
 {
     "name": "user-follows",
     "version": "1.0.0",
-    "description": "User Follows module: quan hệ follow giữa người dùng",
+    "description": "User Follows module: quan h\u1ec7 follow gi\u1eefa ng\u01b0\u1eddi d\u00f9ng",
     "author": "BookOwl Team",
     "namespace": "PrestoWorld\\Modules\\UserFollows",
-    "providers": ["PrestoWorld\\Modules\\UserFollows\\Module"],
-    "config": ["config/user-follows.php"],
-    "migrations": ["Migrations/001_user_follows_tables.php"],
-    "dependencies": {}
+    "providers": [
+        "PrestoWorld\\Modules\\UserFollows\\Module"
+    ],
+    "config": [
+        "config/user-follows.php"
+    ],
+    "migrations": [
+        "Migrations/001_user_follows_tables.php"
+    ],
+    "dependencies": {
+        "headless-cms": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrestoWorld\\Modules\\UserFollows\\": "."
+        }
+    },
+    "priority": 20,
+    "headless": {
+        "providers": {
+            "user-follows": "PrestoWorld\\Modules\\UserFollows\\Headless\\UserFollowsProvider"
+        }
+    }
 }
