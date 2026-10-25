@@ -1,7 +1,8 @@
 {
+    "$schema": "https://prestoworld.pages.dev/schemas/module-manifest/v1.json",
     "name": "user-follows",
     "version": "1.0.0",
-    "description": "User Follows module: quan h\u1ec7 follow gi\u1eefa ng\u01b0\u1eddi d\u00f9ng",
+    "description": "User Follows module: quan hệ follow giữa người dùng",
     "author": "BookOwl Team",
     "namespace": "PrestoWorld\\Modules\\UserFollows",
     "providers": [
@@ -26,5 +27,8 @@
         "providers": {
             "user-follows": "PrestoWorld\\Modules\\UserFollows\\Headless\\UserFollowsProvider"
         }
+    },
+    "screens": {
+        "user-follows": "userfollows-screens"
     }
 }
